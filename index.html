@@ -1,85 +1,334 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<title>GRASP Automation</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="icon" type="image/png" href="images/logo.ico" sizes="32x32">
-		<link rel="shortcut icon" type="image/png" href="images/logo.ico">
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="./css/style.css" /> 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="icon" href="./images/logo.ico">	
+	<title>GRASP Automation</title>	
+</head>
+
+<body>	
 	
-		<!-- Wrapper -->
-		<div id="wrapper">
 	
-			<!-- Main -->
-			<div id="main">
-				<div class="inner">
+<div class="header">
+
+	<div class="shadowNavbar">	
 	
-					<!-- Header -->
-					<header id="header">
-						<a href="index.html" class="logo"><strong>G</strong>eneral <strong>R</strong>obotics & <strong>A</strong>utonomous <strong>S</strong>ystems and <strong>P</strong>rocesses</a>
-					</header>
-					<span class="image right">
-						<img src="images/logo.png" alt="" />
-					</span>
-							<!-- Banner -->
-								<header class="main">
-									<h1>GRASP Automation</h1>
-									<p>@Toronto, ON, Canada</p>
-								</header>
-								
-								<p>GRASP Automation Ltd. was founded in 2017. The main goal of the GRASP is the design, development and consulting of advanced
-								technologies for autonomous systems and processes, with emphasis on Robotic and Medical Systems and Devices. </p>
-								<div class="row">
-									<div class="col-6 col-12-small">
-									</div>
-									<div class="col-6 col-12-small">
-									</div>
-								</div>
-						</div>
+		<div id="mySidepanel" class="sidepanel">	
+					
+			<ul class="side-nav">
+				<li class="side-item">
+					<a href="#" class="closebtn" onclick="closeNav()">☰</a>
+					<div class="search-box">		
+						<input class="search-txt" type="text" name="" placeholder="Type to search">		
+						<a class="search-btn"  href="#">
+						<i class="fa fa-search"></i>
+						</a>			
 					</div>
+				</li>
+				<li class="side-item">
+					<a href="./index.html" class="side-link">Home</a>					
+				</li>
+				
+				<li class="side-item">
+					<a href="./About/committee.html" class="side-link">Products</a>				
+				</li>
+					<li class="sideSubItem">
+						<a href="./About/committee.html" class="side-link">Committee</a>				
+					</li>
+					<li class="sideSubItem">
+						<a href="./comingsoon.html" class="side-link">Contact</a>				
+					</li>
+					
+				<li class="side-item">
+					<a href="./comingsoon.html" class="side-link">Registration</a>
+				</li>
+				
+					<li class="sideSubItem">
+						<a href="./comingsoon.html" class="side-link">Paper Submission</a>				
+					</li>
+					<li class="sideSubItem">
+						<a href="./comingsoon.html" class="side-link">Registration</a>				
+					</li>
+				
+				<li class="side-item">
+					<a href="./callOfPapers.html" class="side-link">Program</a>
+				</li>
+				
+					<li class="sideSubItem">
+							<a href="./callOfPapers.html" class="side-link">Call for Papers</a>				
+					</li>
+					<li class="sideSubItem">
+							<a href="./comingsoon.html" class="side-link">Program Overview</a>				
+					</li>
+					<li class="sideSubItem">
+							<a href="./ImportantDates.html" class="side-link">Important Dates</a>				
+					</li>
+					
+				<li class="side-item">					
+					<a href="./aboutToronto.html" class="side-link">Toronto &amp; Travel</a>
+				</li>
+				
+					<li class="sideSubItem">
+							<a href="./aboutToronto.html" class="side-link">About Toronto</a>				
+					</li>
+					<li class="sideSubItem">
+							<a href="./comingsoon.html" class="side-link">Conference Venue</a>				
+					</li>
+					<li class="sideSubItem">
+							<a href="./travelInformation.html" class="side-link">Travel Information</a>				
+					</li>
+				<li class="side-item">					
+					<a href="./comingsoon.html" class="side-link">Event</a>
+				</li>
+					<li class="sideSubItem">
+							<a href="./comingsoon.html" class="side-link">Keynotes</a>				
+					</li>
+					<li class="sideSubItem">
+							<a href="./comingsoon.html" class="side-link">Invited Session</a>				
+					</li>
+				<li class="side-item">					
+					<a href="./PastICCSEs/aboutICCSE.html" class="side-link">Past ICCSEs</a>
+				</li>
+					<li class="sideSubItem">
+							<a href="./PastICCSEs/aboutICCSE.html" class="side-link">About ICCSE</a>				
+					</li>
+					<li class="sideSubItem">
+							<a href="./PastICCSEs/historyOfICCSE.html" class="side-link">History of ICCSE</a>				
+					</li>
+					<li class="sideSubItem">
+							<a href="./PastICCSEs/academicPlatform.html" class="side-link">Academic Platform</a>				
+					</li>
+					<li class="sideSubItem">
+							<a href="./PastICCSEs/reviewOfPastIccses.html" class="side-link">Review of Past ICCSEs</a>				
+					</li>
+					<li class="sideSubItem">
+							<a href="./PastICCSEs/publications.html" class="side-link">Publications</a>				
+					</li>
+					<li class="sideSubItem">
+							<a href="./PastICCSEs/keynoteSpeech.html" class="side-link">Keynote Speech</a>				
+					</li>
+					<li class="sideSubItem">
+							<a href="./PastICCSEs/papertAndIndexed.html" class="side-link">Papers and Indexed</a>				
+					</li>
+					<li class="sideSubItem">
+							<a href="./PastICCSEs/LoaOfIeee.html" class="side-link">LOA of IEEE</a>				
+					</li>					
+			</ul>
+			
+		</div>
+		
+		<div class="sideloge">
+				<img src="./images/sidelogo.jpg">
+		</div> 
+		
+		<button class="openbtn" onclick="openNav()">☰</button> 
+		
+	</div>
+<script>
+//open sidepanel function
+	function openNav() {
+		document.getElementById("mySidepanel").style.width = "270px";
+	}
+//close side panel function
+	function closeNav() {
+		document.getElementById("mySidepanel").style.width = "0";
+	}
+</script>
 
-				<!-- Sidebar -->
-					<div id="sidebar">
-						<div class="inner">
-							<!-- Menu -->
-								<nav id="menu">
-									<header class="major">
-										<h2>Menu</h2>
-									</header>
-									<ul>
-										<li><a href="index.html">Homepage</a></li>
-										<li><a href="index.html">Products</a></li>
-										<li><a href="index.html">Service</a></li>
-										<li><a href="index.html">Customer Stories</a></li>
-										<li><a href="index.html">Company</a></li>
-									</ul>
-								</nav>
+	<div class="logo">
+			<img src="./images/headerimages.jpg">
+	</div> 
+	
+	<div class= "navbar">
+		<div class="subnav">
+			<a href="./index.html" id="active">Home</a>
+		</div> 	
 
-							<!-- Section -->
-								<section>
-									<header class="major">
-										<h2>Contact Information</h2>
-									</header>
-									<ul class="contact">
-										<li class="icon solid fa-home">Unit 101, 40 Conlin Road<br />
-											Oshawa, ON L1G 0C5</li>
-										<li class="icon solid fa-envelope"><a href="#">info@graspautomation.com</a></li>
-										<li class="icon solid fa-phone">+1 (905) 721-8668</li>
-										
-									</ul>
-								</section>
-								</div>
-						</div>
-					</div>
-			<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<div class="subnav">
+			<button class="subnavbtn">Products 			  
+			</button>
+			<div class="subnav-content">
+				<a href="./comingsoon.html">Robots</a>
+			</div>
+		</div> 		
+		<div class="subnav">
+			<button class="subnavbtn">Service		  
+			</button>
+			<div class="subnav-content">
+				<a href="./comingsoon.html">Engineering Service</a>
+				<a href="./comingsoon.html">Consulting</a>
+			</div>
+		</div> 		
+		<div class="subnav">
+			<button class="subnavbtn">Customer Stories 			  
+			</button>
+			<div class="subnav-content">
+			    <a href="./comingsoon.html">Industrial</a>
+			    <a href="./comingsoon.html">Govenment</a>
+			</div>
+		</div>
+		<div class="subnav">
+			<button class="subnavbtn">Company 			  
+			</button>
+			<div class="subnav-content">
+			    <a href="./comingsoon.html">About</a>		  
+			</div>
+		</div>
+		
+	</div>	
+	
+</div>
 
-	</body>
+<div class="container">
+	<div class="mySlides">
+		<div class="numbertext">1 / 5</div>
+		<img src="./images/1.jpg">
+	</div>
+
+	<div class="mySlides">
+		<div class="numbertext">2 / 5</div>
+		<img src="./images/2.jpg">
+	</div>
+
+	<div class="mySlides">
+		<div class="numbertext">3 / 5</div>
+		<img src="./images/3.jpg">
+	</div>
+	
+	<div class="mySlides">
+		<div class="numbertext">4 / 5</div>
+		<img src="./images/4.jpg">
+	</div> 
+	  
+	<div class="mySlides">
+		<div class="numbertext">5 / 5</div>
+		<img src="./images/5.jpg">
+	</div> 	  
+	  
+	  <a class="prev" onclick="plusSlides(-1)"><</a>
+	  <a class="next" onclick="plusSlides(1)">></a>
+	  
+	  
+	<div style="text-align:center">
+		<span class="dot1" onclick="currentSlide(1)"></span> 
+		<span class="dot2" onclick="currentSlide(2)"></span> 
+		<span class="dot3" onclick="currentSlide(3)"></span>
+		<span class="dot4" onclick="currentSlide(4)"></span> 
+		<span class="dot5" onclick="currentSlide(5)"></span>  
+	</div>
+	   
+ </div>
+<script>
+//change image functions
+	var myIndex = 0;
+	carousel();
+
+	function carousel() {
+		var i;
+		var x = document.getElementsByClassName("mySlides");
+		for (i = 0; i < x.length; i++) {
+		   x[i].style.display = "none";  
+		}
+		myIndex++;
+		if (myIndex > x.length) {myIndex = 1}    
+		x[myIndex-1].style.display = "block";  
+		setTimeout(carousel, 3000);
+	}
+
+	var slideIndex = 1;
+	showSlides(slideIndex);
+
+	function plusSlides(n) {
+	  showSlides(slideIndex += n);
+	}
+
+	function currentSlide(n) {
+	  showSlides(slideIndex = n);
+	}
+
+	function showSlides(n) {
+	  var i;
+	  var slides = document.getElementsByClassName("mySlides");
+	  var dots = document.getElementsByClassName("dot1");
+	  if (n > slides.length) {slideIndex = 1}    
+	  if (n < 1) {slideIndex = slides.length}
+	  for (i = 0; i < slides.length; i++) {
+		  slides[i].style.display = "none";  
+	  }
+	  for (i = 0; i < dots.length; i++) {
+		  dots[i].className = dots[i].className.replace(" active", "");
+	  }
+	  slides[slideIndex-1].style.display = "block";  
+	  dots[slideIndex-1].className += " active";
+}
+</script>	
+
+<div class="content"> 
+	<h1>GRASP Automation</h1>
+	<p>@ Toronto, ON, Canada</p>
+	<p>GRASP Automation Ltd. was founded in 2017. The main goal of the GRASP is the design, development and consulting of advanced technologies for autonomous systems and processes, with emphasis on Robotic and Medical Systems and Devices.</p>
+
+	
+</div>	
+
+
+<div class="content"> 
+	<h1>News</h1>	
+
+	<p>GRASP Automation Ltd. was founded in 2017. The main goal of the GRASP is the design, development and consulting of advanced technologies for autonomous systems and processes, with emphasis on Robotic and Medical Systems and Devices.</p>
+	
+	
+</div>
+
+</div>
+
+		<div class="footer">
+
+			<div class="footer-text">	
+				<p>Copyright © 2017 GRASP Automation Ltd.</p>
+			</div>
+			
+			<div class="email-address">
+				<a href="mailto:iccse.2019@gmail.com">
+				<img src="./images/letter.jpg">
+				</a>				
+			</div>
+	
+			<div class="wechat-code">
+				<img src="./images/wxcode.jpg">
+			</div> 
+			
+		</div>
+
+			<button onclick="topFunction()" id="myBtn" title="Go to top">
+			<i class="fa fa-arrow-up"></i>
+			</button>
+			
+<script>
+//got back top functions
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+		if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			document.getElementById("myBtn").style.display = "block";
+		} else {
+			document.getElementById("myBtn").style.display = "none";
+		}
+	}
+
+	function topFunction() {
+		document.body.scrollTop = 0;
+		document.documentElement.scrollTop = 0;
+	}	
+</script>
+		
+</body>
 </html>
+
+
+
+
+
