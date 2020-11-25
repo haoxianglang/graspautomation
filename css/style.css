@@ -22,8 +22,6 @@ body {
 	display:none;	
 }
 
-
-
 .sidepanel  {	
 	right :0px;    
 	position: fixed;
@@ -76,8 +74,6 @@ body {
 	 color: #ff6666;	
 }
 
-
-
 .openbtn {		
 	margin-top:-53px;
 	float:right;		
@@ -88,9 +84,6 @@ body {
     padding: 10px 15px;
     border: none;
 }
-
-
-
 
 
 
