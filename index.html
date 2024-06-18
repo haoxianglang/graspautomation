@@ -1,306 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<link rel="icon" href="images/logo.ico">	
-     <title>GRASP Automation</title>
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-     <meta name="description" content="">
-     <meta name="keywords" content="">
-     <meta name="author" content="">
-     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
-     <link rel="stylesheet" href="css/bootstrap.min.css">
-     <link rel="stylesheet" href="css/font-awesome.min.css">
-     <link rel="stylesheet" href="css/owl.carousel.css">
-     <link rel="stylesheet" href="css/owl.theme.default.min.css">
-
-     <!-- MAIN CSS -->
-     <link rel="stylesheet" href="css/templatemo-style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRASP Automation - Your Technology Consulting Partner</title>
+    <link rel="icon" href="images/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background: #333;
+            color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            background: #fff;
+            color: #333;
+            padding: 20px 20px;
+            display: flex;
+            align-items: center;
+        }
+        header img {
+            max-width: 100px;
+            margin-right: 20px;
+        }
+        header h1 {
+            font-size: 1.5em;
+            margin: 0;
+        }
+        .showcase {
+            background: url('images/banner.gif') no-repeat center center/cover;
+            color: #fff;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            text-align: left;
+            padding: 0 20px;
+        }
+        .showcase h1 {
+            font-size: 3em;
+        }
+        .showcase p {
+            font-size: 1.2em;
+        }
+        .services {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+        .service {
+            background: #444;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+            flex: 1;
+            text-align: center;
+            box-sizing: border-box;
+            min-width: calc(25% - 40px);
+        }
+        .service i {
+            font-size: 3em;
+            margin-bottom: 10px;
+            color: #f4f4f4;
+        }
+        footer {
+            background: #fff;
+            color: #333;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+        }
+        @media (max-width: 768px) {
+            .service {
+                flex: 1 1 calc(50% - 20px);
+            }
+        }
+        @media (max-width: 480px) {
+            .service {
+                flex: 1 1 100%;
+            }
+        }
+    </style>
 </head>
-<body id="top" data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
-
-     <!-- PRE LOADER -->
-     <section class="preloader">
-          <div class="spinner">
-               <span class="spinner-rotate"></span>
-          </div>
-     </section>
-
-
-     <!-- MENU -->
-     <section class="navbar custom-navbar navbar-fixed-top" role="navigation">
-          <div class="container">
-               <div class="navbar-header">
-                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                         <span class="icon icon-bar"></span>
-                         <span class="icon icon-bar"></span>
-                         <span class="icon icon-bar"></span>
-                    </button>
-                    <!-- lOGO TEXT HERE -->
-                    <img src="images/logo.png" alt="logo" style="float:left; width:120px;">
-               </div>
-
-               <!-- MENU LINKS -->
-               <div class="collapse navbar-collapse">
-                    <ul class="nav navbar-nav navbar-nav-first">
-                         <li><a href="#top" class="smoothScroll">Home</a></li>
-                         <li><a href="#products" class="smoothScroll">Products</a></li>
-                         <li><a href="#service" class="smoothScroll">Customer Stories</a></li>
-                         <li><a href="#customer" class="smoothScroll">Partners</a></li>
-                    </ul>
-
-          </div>
-     </section>
-
-
-     <!-- HOME -->
-     <section id="home">
-          <div class="row">
-                    <div class="owl-carousel owl-theme home-slider">
-                         <div class="item item-first">
-                              <div class="caption">
-                                   <div class="container">
-                                        <div class="col-md-6 col-sm-12">
-                                             <h1>GRASP Automation Ltd.</h1>
-                                             <h3>The Future of Robotics: Innovative Solutions for Smart Engineering</h3>
-                                             <a href="#feature" class="section-btn btn btn-default smoothScroll">Discover more</a>
-                                        </div>
-                                   </div>
-                              </div>
-                         </div>
-                    </div>
-          </div>
-     </section>
-
-
-     <!-- FEATURE -->
-     <section id="feature">
-          <div class="container">
-              
-			<h2>GRASP Automation Ltd.<small> is an engineering reserach and consultation company in robotics. The company offer smart, informed, and insightful solutions and consultations related to robotics and its applications.</small></h2>
-		
-               <div class="row">
-                    <div class="col-md-4 col-sm-4">
-                         <div class="feature-thumb">
-                              <span>01</span>
-                              <h3>Robotic Applications</h3>
-                              <p>Multi-domain engineering design including Mehcanical, Electrical/Electronics and Computer Engineering.</p>
-                         </div>
-                    </div>
-
-                    <div class="col-md-4 col-sm-4">
-                         <div class="feature-thumb">
-                              <span>02</span>
-                              <h3>Biomedical Engineering</h3>
-                              <p>Industrial automation and autonomous robotics systems including autonomous vechicles and mobile robtoic and manipulation systems</p>
-                         </div>
-                    </div>
-
-                    <div class="col-md-4 col-sm-4">
-                         <div class="feature-thumb">
-                              <span>03</span>
-                              <h3>Automotive Engineering</h3>
-                              <p>Consultation of system design, implementatio and experimentation in Mechatronics and Autonomous systems.</p>
-                         </div>
-                    </div>
-
-               </div>
-          </div>
-     </section>
-
-
-     <!-- Products -->
-     <section id="products">
-          <div class="container">
-               <div class="row">
-
-                    <div class="col-md-12 col-sm-12">
-                         <div class="section-title">
-                              <h2>Products</h2>
-                         </div>
-                    </div>
-
-                    <div class="col-md-3 col-sm-6">
-                         <div class="team-thumb">
-                              <div class="team-image">
-                                   <img src="images/mobile robot.png" class="img-responsive" alt="">
-                              </div>
-                              <div class="team-info">
-                                   <h3>Mobile Robotis</h3>
-                                   <span>Mobile Robotic Systems and Modulars</span>
-                              </div>
-                              
-                         </div>
-                    </div>
-
-                    <div class="col-md-3 col-sm-6">
-                         <div class="team-thumb">
-                              <div class="team-image">
-                                   <img src="images/parallel.png" class="img-responsive" alt="">
-                              </div>
-                              <div class="team-info">
-                                   <h3>Parallel Robots</h3>
-                                   <span>High-speed and Accurate Parallel Robotic Manipulators</span>
-                              </div>
-                         </div>
-                    </div>
-
-                    <div class="col-md-3 col-sm-6">
-                         <div class="team-thumb">
-                              <div class="team-image">
-                                   <img src="images/robotic arm.png" class="img-responsive" alt="">
-                              </div>
-                              <div class="team-info">
-                                   <h3>Robotic Arm</h3>
-                                   <span>Industrial Manipulators and Collabrative Manipulators</span>
-                              </div>
-                         </div>
-                    </div>
-
-                    <div class="col-md-3 col-sm-6">
-                         <div class="team-thumb">                             
-                                   <img src="images/software.png" class="img-responsive" alt="">
-                              </div>
-                              <div class="team-info">
-                                   <h3>Software</h3>
-                                   <span>Sensing, Perception, Localization, Navigation, Reasoing and Motion Control</span>
-                              </div>
-                         </div>
-                    </div>
-
-               </div>
-          </div>
-     </div>
-     </section>
-
-
-     <!-- Customer Stories -->
-     <section id="service">
-          <div class="container">
-               <div class="row">
-
-                    <div class="col-md-12 col-sm-12">
-                         <div class="section-title">
-                              <h2>Customer Stories</h2>
-                         </div>
-                    </div>
-
-					<div class="row">
-						<div class="col-md-4 col-sm-4">
-							 <div class="feature-thumb">
-									<img src="images/RoboWise.gif" class="img-responsive" alt="">
-								  <h3>Robotic Applications</h3>
-								  <p>Multi-domain engineering design including Mehcanical, Electrical/Electronics and Computer Engineering.</p>
-							 </div>
-						</div>
-	
-						
-	
-				   </div>
-
-               </div>
-          </div>
-     </section>
-
-
-     <!-- Partners -->
-     <section id="customer">
-          <div class="container">
-               <div class="row">
-
-                    <div class="col-md-12 col-sm-12">
-                         <div class="section-title">
-                              <h2>Partners</h2>
-                         </div>
-                         
-						 <div class="col-md-3 col-sm-6">
-							<div class="team-thumb">
-								 <div class="team-image">
-									  <img src="images/Ontario-Tech-University.png" class="img-responsive" alt="">
-								 </div>
-								 <div class="team-info">
-									  <h3>Ontario Tech Univesrity</h3>
-									  <span>2000 Simcore Street North, Oshawa, ON L1G 0C5 Canada</span>
-								 </div>
-								 
-							</div>
-							<div class="team-thumb">
-								<div class="team-image">
-									 <img src="images/NSERC.png" class="img-responsive" alt="">
-								</div>
-								<div class="team-info">
-									 <h3>NSERC (Natural Sciences and Engineering Research Council of Canada)</h3>
-									 <span></span>
-								</div>
-						   </div>
-
-						   <div class="team-thumb">
-							<div class="team-image">
-								 <img src="images/OCI.png" class="img-responsive" alt="">
-							</div>
-							<div class="team-info">
-								 <h3>OCI(ONTARIO CENTRE OF INNOVATION)</h3>
-							</div>
-					   </div>
-					   </div>
-					   
-               </div>
-          </div>
-     </section>
-
-
-     <!-- FOOTER -->
-     <footer id="footer">
-          <div class="container">
-               <div class="row">
-
-                    <div class="col-md-4 col-sm-6">
-                         <div class="footer-info">
-                              <div class="section-title">
-                                   <h2>Location</h2>
-                              </div>
-                              <address>
-                                   <p>XXX,<br> Whitby, ON L4B 1K4 Canada</p>
-                              </address>
-                         </div>
-                    </div>
-
-                    <div class="col-md-4 col-sm-6">
-                         <div class="footer-info">
-                              <div class="section-title">
-                                   <h2>Contact Info</h2>
-                              </div>
-                              <address>
-                                   <p>Tel: +1 XXX XXX XXXX</p>
-                                   
-                                   <p><a href="mailto:XXX@gmail.com">info@graspautomation.ca</a></p>
-                              </address>
-
-                              <div class="footer_menu">
-                                   
-                              </div>
-                         </div>
-                    </div>
-
-                    <div class="col-md-4 col-sm-6">
-                         <div class="footer-info">
-                              <div class="copyright-text"> 
-                                   <p>Copyright &copy; 2023 GRASP Automation Ltd.</p>
-
-                              </div>
-                         </div>
-                    </div>
-                    
-               </div>
-          </div>
-     </footer>
-     <!-- SCRIPTS -->
-     <script src="js/jquery.js"></script>
-     <script src="js/bootstrap.min.js"></script>
-     <script src="js/owl.carousel.min.js"></script>
-     <script src="js/smoothscroll.js"></script>
-     <script src="js/custom.js"></script>
-
+<body>
+    <header>
+        <img src="images/logo.png" alt="GRASP Automation Logo">
+        <h1>GRASP Automation Ltd.</h1>
+    </header>
+    
+    <section class="showcase">
+        <div class="container">
+            <h1>Your Technology Consulting Partner</h1>
+            <p>The Future of Robotics: Innovative Solutions for Smart Engineering</p>
+        </div>
+    </section>
+    
+    <section class="services container">
+        <div class="service">
+            <i class="fas fa-robot"></i>
+            <h2>Robotics and Automation</h2>
+            <p>Innovative robotics solutions to streamline automation processes.</p>
+        </div>
+        <div class="service">
+            <i class="fas fa-car"></i>
+            <h2>Autonomous Systems</h2>
+            <p>Developing self-governing systems for various applications.</p>
+        </div>
+        <div class="service">
+            <i class="fas fa-brain"></i>
+            <h2>AI & Machine Learning</h2>
+            <p>Implementing intelligent solutions for complex problems.</p>
+        </div>
+        <div class="service">
+            <i class="fas fa-cogs"></i>
+            <h2>Mechatronics Design and Implementation</h2>
+            <p>Providing top-notch design and implementation services for mechatronic systems.</p>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 GRASP Automation. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
